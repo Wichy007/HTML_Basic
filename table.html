@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        div{
+            border: 1px solid red;
+        }
+        span{
+            border: 1px solid green;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1>รายการสินค้า</h1>
+
+    <table border="1" bgcolor="yellow" cellpadding="10" cellspacing="5"> <!--width="50%"--><!--attrbute width ใช้หน่วยเป็นเปอร์เซ็นของควากว้างหน้าจอ-->
+        <thead>
+            <th>รหัสสินค้า</th>
+            <th>ภาพสินค้า</th>
+            <th>ชื่อสินค้า</th>
+            <th>ราคา</th>
+            <th>กดสั่งซื้อ</th>
+        </thead>
+        <tbody>
+            <tr style="background-color: green;" align="center">
+                <td>P001</td>
+                <td>
+                    <img src="https://cdn.pixabay.com/photo/2015/04/10/00/39/food-715533__340.jpg" alt="" width="50px" height="50px">
+                </td>
+                <td bgcolor="pink">ส้มตำ</td>
+                <td>150.00</td>
+                <td rowspan="2">
+                    <a href="#">สั่งซื้อ</a>
+                </td>
+            </tr>
+            <tr bgcolor="red" align="center">
+                <td>P002</td>
+                <td>
+                    <img src="https://media.istockphoto.com/id/1363601737/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B9%80%E0%B8%99%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%99%E0%B8%AD%E0%B8%81%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%9A%E0%B8%99%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%AA%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%81%E0%B9%80%E0%B8%99%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%95%E0%B8%B0%E0%B9%82%E0%B8%9E%E0%B8%81%E0%B8%96%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%9A%E0%B8%99%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B2%E0%B8%99%E0%B8%AB%E0%B8%B4%E0%B8%99%E0%B8%AD%E0%B9%88%E0%B8%AD%E0%B8%99-%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B5%E0%B8%94%E0%B9%8D%E0%B8%B2-%E0%B8%A1%E0%B8%B8%E0%B8%A1%E0%B8%A1%E0%B8%AD%E0%B8%87%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%9A%E0%B8%99.jpg?b=1&s=170667a&w=0&k=20&c=NsjEo8iQzsqCAY2VtAm56Z4tApjsyZsYD7EbbmS37HQ=" alt="" width="50px" height="50px">
+                </td>
+                <td>สเต็ก</td>
+                <td>200.00</td>
+                
+            </tr>
+
+            <tr></tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">ราคารวม : 500 บาท</td>
+                
+            </tr>
+        </tfoot>
+    </table>
+    <!--
+    <span style="color: red;">
+        <h1>HTML5</h1>
+        <p>Naravit</p>
+    </span>
+    <span style="color: green;">
+        <h1>CSS</h1>
+        <p>Naravit</p>
+    </span>
+    <div style="color: red;">
+        <h1>HTML</h1>
+        <p>Naravit</p>
+    </div>
+    <div style="color: green;">
+        <h1>CSS</h1>
+        <p>Naravit</p>
+    </div>
+-->
+    <span>Naravit</span>
+    <span>Naravit</span>
+    <span>Naravit</span>
+    <div>Naravit</div>
+    <div>Naravit</div>
+    <div>Naravit</div>
+</body>
+</html>

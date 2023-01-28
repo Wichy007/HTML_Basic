@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <style>
+        form{
+            border: 1px solid red;
+        }
+    </style>
+    
+</head>
+<body>
+     <h1 align="center">แบบฟอร์มลงทะเบียน</h1>
+     <form>
+        <div align="center">
+            <label for="firstname">ชื่อจริง</label>
+            <input type="text" name="fname" placeholder="ป้อนชื่อจริงของคุณ (ก-ฮ)" required>
+        </div>
+        <div align="center">
+            <label for="lastname">นามสกุล</label>
+            <input type="text" name="lname">
+        </div>
+        <div align="center">
+            <label for="email">อีเมล</label>
+            <input type="email" name="email">
+        </div>
+        <div align="center">
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" name="password">
+        </div>
+        <div align="center">
+            <label for="address">ที่อยู่</label>
+            <textarea name="" id="" cols="20" rows="5" readonly>
+                naravit
+            </textarea>
+        </div>
+        <div align="center">
+            <label for="age">อายุ</label>
+            <input type="number" name="age" min="0" max="10" value="2" readonly>
+        </div>
+        <div>
+            <label for="lastname">วันเดือนปีเกิด</label>
+            <input type="date" name="birtdate">
+        </div>
+        <div>
+            <label for="lastname">เบอร์โทรศัพท์</label>
+            <input type="tel" name="telephone_No.">
+        </div>
+        <div>
+            <label for="lastname">สีที่ชอบ</label>
+            <input type="color" name="favcolor">
+        </div>
+        <div>
+            <label for="lastname">ระกับความพึงพอใจ</label>
+            <input type="range" name="lname" value="0">
+        </div>
+        <div>
+            <label for="">ระดับการศึกษา</label>
+            <select name="educate" id="">
+                <option value="มัธยม">มัธยม</option>
+                <option value="ปริญญาตรี">ปริญญาตรี</option>
+                <option value="ปริญญาโท" selected>ปริญญาโท</option> <!--attribute selected => ทำให้ตัวเลือกนี้เป็น defalt-->
+            </select>
+        </div>
+        <div>
+            <label for="gender">เพศ</label>
+            <input type="radio" name="gender">เพศชาย
+            <input type="radio" name="gender">เพศหญิง
+            <input type="radio" name="gender">อื่นๆ <!--atrribute name => ทำให้ตัวเลือกที่มีชื่อเหมือนกันคือตัวเลือกกลุ่มเดียวกัน ถ้าอยู่ในกลุ่มเดียวกันจะเลือกซ้ำกันไม่ได้-->
+        </div>
+        <div>
+            <label for="favorite">สิ่งที่ชอบ</label>
+            <input type="checkbox" name="Fav" >เขียนเว็บ
+            <input type="checkbox" name="Fav" >สร้างเกมส์
+            <input type="checkbox" name="Fav" >ซ่อมคอม
+            <input type="checkbox" name="Fav" >เล่นเกมส์
+            <input type="checkbox" name="Fav" >เขียนเว็บ
+        </div>
+        <div>
+            <label for="file">แนบเอกสาร</label>
+            <input type="file">
+        </div>
+        <div>
+            <label for="www">แนบเว็บใซต์</label>
+            <input type="url">
+        </div>
+        <div>
+            <input type="submit" value="บันทึกข้อมูล">
+            <!--สามารถใช้ tag button แทน tag input ได้ค่าเท่ากัน-->
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+    </form>
+</body>
+</html>
