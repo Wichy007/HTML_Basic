@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 1000px;
+            height: 300px;
+            border: 2px solid gray;
+            text-align: center;
+        }
+        .button-delete{
+             background-color: red;
+             color: white;
+             border-radius: 5px;
+             border: 0;
+             width: 100px;
+             font-weight: bold;
+        }
+        .button-edit{
+             background-color: yellow;
+             color: black;
+             border: 0;
+             border-radius: 5px;
+             width: 100px;
+             font-weight: bold;
+        }
+        .button-delete:hover{
+            cursor: pointer;
+        }
+        .button-edit:hover{
+            cursor: pointer;
+        }
+        th,td{
+            border: 1px solid gray;
+            margin: 0;
+
+        }
+        th{
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <thead>
+                <th>จำนวนที่มีอยู่/ชิ้น</th>
+                <th>ราคาทุน/บาท</th>
+                <th>ราคารวม/บาท</th>
+                <th>ประเภทวัสดุ</th>
+                <th>ลบรายการ</th>
+                <th>แก้ไขรายการ</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td>50.00</td>
+                    <td>250.00</td>
+                    <td>วัสดุ IT</td>
+                    <td><button class="button-delete">ลบรายการ</button></td>
+                    <td ><button class="button-edit">แก้ไขรายการ</button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>50.00</td>
+                    <td>250.00</td>
+                    <td>วัสดุ IT</td>
+                    <td ><button class="button-delete">ลบรายการ</button></td>
+                    <td><button class="button-edit" >แก้ไขรายการ</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>900.00</td>
+                    <td>3600.00</td>
+                    <td>วัสดุ IT</td>
+                    <td><button class="button-delete" >ลบรายการ</button></td>
+                    <td ><button class="button-edit">แก้ไขรายการ</button></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5" align="right" color="red" style="color: red;">ราคารวมสินค้าทั้งหมด</td>
+                    <td>7200.00</td>
+                </tr>
+            </tfoot>
+        </table> 
+    </form>   
+</body>
+</html>
